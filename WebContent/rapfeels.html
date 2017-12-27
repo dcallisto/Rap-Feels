@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Rap Feels</title>
+<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="fuzzy-autocomplete.js"></script>
+</head>
+<body>
+<br><br><br>
+<div class="motto">RELATE TO LYRICS, DISCOVER NEW MUSIC</div>
+
+<div onclick = "blurFunc()" id = "start" class="startButton">GET STARTED</div>
+<br><br><br><br><br>
+<div class = "horiz">
+<img src = "becauseInternet.jpg" class="elementToFadeIn" id="childish" />
+<img src = "cybersex.jpg" class="elementToFadeIn" id="blackbear" />
+<img src = "colours2.jpg" class="elementToFadeIn" id="pnd" />
+<img src = "wakingAtDawn.jpg" class="elementToFadeIn" id="roywoods" />
+<img src = "moreLife.jpg" class="elementToFadeIn" id="drake" />
+</div>
+
+<div class = "horiz">
+<img src = "hndrxx.jpg" class="elementToFadeIn" id="future" />
+<img src = "bigFishTheory.jpg" class="elementToFadeIn" id="vincestaples" />
+<img src = "catchTheseVibes.jpg" class="elementToFadeIn" id="pnb" />
+<img src = "onGaz.jpg" class="elementToFadeIn" id="achal" />
+<img src = "spaceBetween.jpg" class="elementToFadeIn" id="majidjordan" />
+</div>
+
+
+<div id="formDiv" class = "formDiv">
+Select the type of lyrics you'd like to hear:
+<form method = "POST" class="formStuff" id="form" action = "findMatch">
+
+<br><br>
+<select name = "userSelect">
+  <option value="confident">Confident</option>
+  <option value="romHappy">Good Love</option>
+  <option value="romSad">Bad Love</option>
+</select>
+<br><br><br>
+
+Specify further (we'll try)
+<br>
+<input type = 'text' name = "userInput">
+<br><br><br><br>
+<input type = 'submit' value = "FIND A SONG">
+
+</form>
+</div>
+
+
+
+
+
+</body>
+<script>
+
+function blurFunc() {
+	var childish = document.getElementById("childish");
+	childish.setAttribute('class', 'blur');
+	
+	childish = document.getElementById("blackbear");
+	childish.setAttribute('class', 'blur');
+	
+	childish = document.getElementById("pnd");
+	childish.setAttribute('class', 'blur');
+	
+	childish = document.getElementById("roywoods");
+	childish.setAttribute('class', 'blur');
+	
+	childish = document.getElementById("drake");
+	childish.setAttribute('class', 'blur');
+	
+	childish = document.getElementById("future");
+	childish.setAttribute('class', 'blur');
+	
+	childish = document.getElementById("vincestaples");
+	childish.setAttribute('class', 'blur');
+	
+	childish = document.getElementById("pnb");
+	childish.setAttribute('class', 'blur');
+	
+	childish = document.getElementById("achal");
+	childish.setAttribute('class', 'blur');
+	
+	childish = document.getElementById("majidjordan");
+	childish.setAttribute('class', 'blur');
+	
+	var form = document.getElementById("formDiv");
+	form.style.display = "block";
+	
+	document.getElementById("start").style.display = "none";
+	
+	
+	
+}
+
+function scroll1() {
+	window.scrollTo({
+	"behavior": "smooth",
+	"top": 515
+	});
+}
+function scroll2() {
+	window.scrollTo({
+	"behavior": "smooth",
+	"top": 1030
+	});
+}
+
+</script>
+
+</html>

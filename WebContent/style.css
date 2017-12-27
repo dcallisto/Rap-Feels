@@ -1,0 +1,214 @@
+
+body {
+    background-color: black;
+}
+
+.blur  {
+	width: 20%;
+    height: 333px;
+	-webkit-transition: all 3s ease;
+	-moz-webkit-transition: all 3s ease ;
+	-ms-webkit-transition: all 3s ease ;
+	-o-webkit-transition: all 3s ease ;
+	transition: all 3s ease ;
+	-webkit-filter: blur(5px);
+	float: left;
+	z-index: -1;
+}
+
+.blur:hover {
+
+}
+
+.grow {
+	
+}
+
+.horiz {
+	
+	
+	
+}
+
+.resultsDiv {
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	position: absolute; left: 15%; top: 200px; 
+	background-color: gold;
+	font-family: "Bookman Old Style";
+	font-style: italic;
+	font-variant: small caps;
+	font-size: 20px;
+	z-index: 2;
+	-webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+    opacity: 0;
+    text-align: center;
+    padding: 80px;
+    padding-top: 120px;
+   
+}
+
+.displaySpotify {
+	width: 170px;
+	height: 40px;
+	position: absolute;
+	left: 26.6%;
+	top: 600px;
+	color: white;
+	 background-color: #006400;
+	-webkit-animation: fadein 1s linear forwards;
+    animation: fadein 1s linear forwards;
+    opacity: 0;
+    cursor: pointer;
+    animation-delay: 3s;
+    z-index: 3;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.displaySpotify:hover {
+	background-color: #008000;
+	width: 177px;
+	height: 42px;
+	left: 26.4%;
+}
+
+.iframe {
+	display: none;
+}
+
+.motto {
+	background-color: black;
+	position: absolute;
+	left: 30%;
+	text-align: center;
+	color: white;
+	font-family: "Bookman Old Style";
+	font-size: xx-large;
+}
+
+.iframeShow {
+	position: absolute;
+	left: 55%;
+	top: 300px;
+	border: 1px solid white;
+	-webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+    opacity: 0;
+}
+
+.startButton {
+	color: white;
+	width: 280px;
+	height: 55px;
+	font-family: "Bookman Old Style";
+	font-size: 38px;
+	position: absolute;
+	left: 40.2%;
+	top: 430px;
+	text-align: center;
+	-webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+    opacity: 0;
+    z-index: 1;
+    background-color: #006400;
+    cursor: pointer;
+    padding: 25px;
+    animation-delay: 2s;
+}
+
+.startButton:hover {
+	 background-color: #008000;
+	 width: 299px;
+	 height: 58px;
+	 font-size: 40px;
+	 left: 39.6%;
+	 
+}
+
+.returnButton {
+	color: white;
+	width: 280px;
+	height: 55px;
+	font-family: "Bookman Old Style";
+	font-size: 28px;
+	position: absolute;
+	left: 40.2%;
+	top: 30px;
+	text-align: center;
+    z-index: 1;
+    background-color: #006400;
+    padding: 25px;
+
+}
+
+.returnButton:hover {
+	 background-color: #008000;
+}
+
+.formDiv {
+	border-radius: 50%;
+	width: 350px;
+	height: 350px;
+	position: absolute; left: 32%; top: 200px; 
+	display: none;
+	background-color: #006400;
+	z-index: 2;
+	-webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+    padding: 100px;
+    text-align: center;
+   
+    color: white; 
+   font-family: "Bookman Old Style";
+	
+}
+
+.formStuff {
+  color: white; 
+  font-family: "Bookman Old Style";
+   margin-left: 80px;
+   text-align: left;
+   width: 600px; 
+   height: 200px;   
+  
+}
+
+input[type=submit] {
+	color: white;
+	width: 170px;
+	height: 40px;
+    padding:5px 15px; 
+    background-color: #C81818; 
+    font-family: "Bookman Old Style";
+    border:0 none;
+    cursor:pointer;
+   
+}
+
+input[type=submit]:hover {
+	background-color: #E51414;
+}
+
+.elementToFadeIn {
+    width: 20%;
+    height: 333px;
+    float: left;
+    -webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+    opacity: 0;
+  
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
